@@ -48,9 +48,4 @@
 
 
 
-Q1. Write a C program to define a structure Student containing name, roll number, and marks. Accept and display details of 5 students.
-
-Q2. Write a C program to add two distances (in feet and inches) using structures.
-
-Q3. Write a C program to store and display information of employees using an array of structures (fields: emp_id, name, salary).
 
