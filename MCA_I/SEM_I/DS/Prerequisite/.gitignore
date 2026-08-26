@@ -1,0 +1,27 @@
+# Compiled C artifacts
+*.o
+*.obj
+*.exe
+*.out
+*.a
+*.so
+*.dll
+
+# Common build directories
+build/
+bin/
+debug/
+release/
+
+# Debugging and profiling output
+*.dSYM/
+*.gcda
+*.gcno
+*.prof
+
+# Editor and operating-system metadata
+.vscode/
+.vs/
+.idea/
+.DS_Store
+Thumbs.db
