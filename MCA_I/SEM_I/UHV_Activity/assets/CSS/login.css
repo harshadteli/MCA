@@ -1,0 +1,209 @@
+﻿/* ============================================================
+   LOGIN.CSS – Google Light Theme inspired login page
+   ============================================================ */
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --bg: #f1f3f4;
+  --card-bg: #ffffff;
+  --primary: #1a73e8;
+  --primary-hover: #1557b0;
+  --text: #202124;
+  --sub-text: #5f6368;
+  --border: #dadce0;
+  --error: #d93025;
+  --input-focus: #1a73e8;
+  --shadow: 0 2px 10px rgba(60,64,67,.15), 0 1px 3px rgba(60,64,67,.1);
+  --radius: 12px;
+  --font: 'Google Sans', 'Roboto', Arial, sans-serif;
+}
+
+body {
+  font-family: var(--font);
+  background: var(--bg);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ---------- LOGIN CARD ---------- */
+.login-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 100vh;
+  padding: 1rem;
+  background: linear-gradient(135deg, #e8f0fe 0%, #f1f3f4 60%, #e6f4ea 100%);
+}
+
+.login-card {
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 2.5rem 2.5rem 2rem;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  animation: slideUp .4s ease;
+}
+
+@keyframes slideUp {
+  from { opacity: 0; transform: translateY(24px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ---------- LOGO ---------- */
+.logo-wrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: .6rem;
+  margin-bottom: 1rem;
+}
+
+.logo {
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  box-shadow: 0 2px 8px rgba(0,0,0,.12);
+}
+
+.brand {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--text);
+  letter-spacing: .02em;
+}
+
+.subtitle {
+  color: var(--sub-text);
+  font-size: .95rem;
+  margin-bottom: 1.6rem;
+}
+
+/* ---------- FORM FIELDS ---------- */
+.field-group {
+  text-align: left;
+  margin-bottom: 1.1rem;
+}
+
+.field-group label {
+  display: block;
+  font-size: .82rem;
+  font-weight: 500;
+  color: var(--sub-text);
+  margin-bottom: .35rem;
+  letter-spacing: .01em;
+}
+
+.input-wrap {
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 1.5px solid var(--border);
+  border-radius: 8px;
+  background: #fff;
+  transition: border-color .2s;
+}
+
+.input-wrap:focus-within {
+  border-color: var(--input-focus);
+  box-shadow: 0 0 0 3px rgba(26,115,232,.15);
+}
+
+.input-wrap .icon {
+  padding: 0 .6rem 0 .8rem;
+  font-size: 1rem;
+  color: var(--sub-text);
+  flex-shrink: 0;
+}
+
+.input-wrap input {
+  flex: 1;
+  border: none;
+  outline: none;
+  padding: .75rem .5rem;
+  font-size: .95rem;
+  font-family: var(--font);
+  color: var(--text);
+  background: transparent;
+}
+
+.input-wrap input::placeholder { color: #bdc1c6; }
+
+.toggle-pwd {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0 .8rem;
+  font-size: 1rem;
+  color: var(--sub-text);
+  line-height: 1;
+}
+.toggle-pwd:hover { color: var(--primary); }
+
+/* ---------- ERROR ---------- */
+.error-msg {
+  color: var(--error);
+  font-size: .82rem;
+  min-height: 1.2rem;
+  margin-bottom: .5rem;
+  text-align: left;
+}
+
+/* ---------- LOGIN BUTTON ---------- */
+.btn-login {
+  width: 100%;
+  padding: .8rem;
+  background: var(--primary);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 600;
+  font-family: var(--font);
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .5rem;
+  margin-top: .6rem;
+  transition: background .2s, box-shadow .2s, transform .1s;
+  letter-spacing: .02em;
+}
+
+.btn-login:hover {
+  background: var(--primary-hover);
+  box-shadow: 0 2px 8px rgba(26,115,232,.35);
+}
+
+.btn-login:active { transform: scale(.98); }
+
+/* Loader spinner inside button */
+.btn-loader {
+  width: 18px; height: 18px;
+  border: 2px solid rgba(255,255,255,.4);
+  border-top-color: #fff;
+  border-radius: 50%;
+  animation: spin .7s linear infinite;
+}
+
+.btn-loader.hidden { display: none; }
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+/* ---------- FOOTER ---------- */
+.footer-note {
+  margin-top: 1.5rem;
+  font-size: .78rem;
+  color: #bdc1c6;
+}
+
+/* ---------- UTILITIES ---------- */
+.hidden { display: none !important; }

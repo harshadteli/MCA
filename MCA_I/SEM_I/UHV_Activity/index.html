@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>UHV – Universal Human Values</title>
+  <link rel="stylesheet" href="assets/CSS/login.css" />
+  <link rel="stylesheet" href="assets/CSS/presentation.css" />
+</head>
+<body>
+
+  <!-- ========== LOGIN PAGE ========== -->
+  <div class="login-wrapper" id="loginPage">
+    <div class="login-card">
+      <div class="logo-wrap">
+        <img
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTYyAImgZuza0qSiM-PXmGdyTiZXHBkJ3Ohv7uOcjm6Bvz4V1XBpQcekULM&s=10"
+          alt="UHV Logo" class="logo"
+        />
+        <h1 class="brand">UHV Portal</h1>
+      </div>
+      <p class="subtitle">Sign in to continue</p>
+      <form id="loginForm" novalidate>
+        <div class="field-group">
+          <label for="email">Email</label>
+          <div class="input-wrap">
+            <span class="icon">&#9993;</span>
+            <input type="email" id="email" placeholder="Enter your email" autocomplete="username" required />
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="password">Password</label>
+          <div class="input-wrap">
+            <span class="icon">&#128274;</span>
+            <input type="password" id="password" placeholder="Enter your password" autocomplete="current-password" required />
+            <button type="button" class="toggle-pwd" id="togglePwd" aria-label="Show password">&#128065;</button>
+          </div>
+        </div>
+        <p class="error-msg" id="errorMsg"></p>
+        <button type="submit" class="btn-login" id="loginBtn">
+          <span class="btn-text">Sign In</span>
+          <span class="btn-loader hidden" id="btnLoader"></span>
+        </button>
+      </form>
+      <p class="footer-note">Universal Human Values &copy; 2024</p>
+    </div>
+  </div>
+
+  <!-- ========== PRESENTATION PAGE ========== -->
+  <div class="ppt-wrapper" id="pptPage" style="display:none;">
+
+    <header class="ppt-header">
+      <div class="header-left">
+        <span class="header-dot dot-red"></span>
+        <span class="header-dot dot-yellow"></span>
+        <span class="header-dot dot-green"></span>
+        <span class="header-brand">&#127891; UHV Presentation</span>
+      </div>
+      <button class="btn-logout" id="logoutBtn">&#9676; Logout</button>
+    </header>
+
+    <main class="slide-stage" id="slideStage">
+
+      <!-- SLIDE 1 – Title -->
+      <section class="slide active" data-slide="0">
+        <div class="slide-content center-align">
+          <p class="slide-label lbl-blue animate-fade">Welcome To Our Presentation</p>
+          <h2 class="main-title">
+            <span class="word w1">UNIVERSAL</span>
+            <br/>
+            <span class="word w2">HUMAN</span>
+            <br/>
+            <span class="word w3">VALUES</span>
+          </h2>
+          <div class="deco-line"></div>
+          <p class="slide-sub lbl-green">A Journey Towards Inner Harmony &amp; Co-existence</p>
+          <p class="slide-desc">Explore the foundational values that unite humanity across cultures, time, and geography.</p>
+        </div>
+      </section>
+
+      <!-- SLIDE 2 – Q1 -->
+      <section class="slide" data-slide="1">
+        <div class="slide-content center-align">
+          <p class="slide-label lbl-red animate-fade">&#10067; Quiz Time</p>
+          <h2 class="q-question">
+            Q1) Which Values did you purchase?
+          </h2>
+          <div class="deco-line"></div>
+          <div class="answer-reveal">
+            <p class="ans-label lbl-green">&#9989; Answer</p>
+            <div class="ans-chips">
+              <span class="chip chip-blue">&#128522; Happy</span>
+              <span class="chip chip-red">&#129335; Freedom</span>
+              <span class="chip chip-green">&#128079; Honesty</span>
+              <span class="chip chip-yellow">&#128218; Knowledge</span>
+              <span class="chip chip-purple">&#129309; Trust</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 3 – Q2: Why did you choose them? -->
+      <section class="slide" data-slide="2">
+        <div class="slide-content center-align">
+
+          <p class="slide-label lbl-red animate-fade">&#10067; Quiz Time</p>
+
+          <h2 class="q-question">Q2) Why did you choose them?</h2>
+
+          <div class="deco-line"></div>
+
+          <p class="ans-label lbl-green" style="margin-top:1rem;">&#9989; Answer</p>
+
+          <div class="q2-chips">
+            <div class="q2-chip qc-blue">
+              <span class="q2-icon">&#128522;</span>
+              <span class="q2-name">Happy</span>
+            </div>
+            <div class="q2-chip qc-red">
+              <span class="q2-icon">&#129335;</span>
+              <span class="q2-name">Freedom</span>
+            </div>
+            <div class="q2-chip qc-green">
+              <span class="q2-icon">&#128079;</span>
+              <span class="q2-name">Honesty</span>
+            </div>
+            <div class="q2-chip qc-yellow">
+              <span class="q2-icon">&#128218;</span>
+              <span class="q2-name">Knowledge</span>
+            </div>
+            <div class="q2-chip qc-purple">
+              <span class="q2-icon">&#129309;</span>
+              <span class="q2-name">Trust</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- SLIDE 4 – NCC Camp Experience -->
+      <section class="slide" data-slide="3">
+        <div class="slide-content ncc-slide">
+
+          <!-- Badge strip -->
+          <div class="ncc-badge-row">
+            <span class="ncc-badge badge-navy">&#9992; Air Force</span>
+            <span class="ncc-badge badge-green">&#127470;&#127475; Maharashtra</span>
+            <span class="ncc-badge badge-red">Trup No. 16 VHSK</span>
+          </div>
+
+          <!-- Title -->
+          <h2 class="ncc-title">NCC Camp — Air Scout</h2>
+          <p class="ncc-subtitle">No. 3 Maharashtra Air Squadron &nbsp;|&nbsp; NCC Group HQ, Pune</p>
+
+          <div class="deco-line" style="margin:.7rem 0 1rem;"></div>
+
+          <!-- Two-column layout: image + experience -->
+          <div class="ncc-body">
+
+            <!-- Image -->
+            <div class="ncc-img-wrap">
+              <img src="assets/MEDIA/ncc_camp.jpg" alt="NCC Camp Pune" class="ncc-photo" />
+              <p class="ncc-img-caption">&#128247; NCC Group Headquarters, Pune</p>
+            </div>
+
+            <!-- Experience points -->
+            <div class="ncc-exp">
+              <p class="exp-heading lbl-blue">&#11088; My Best Experience</p>
+              <ul class="exp-list">
+                <li>
+                  <span class="exp-icon">&#9992;</span>
+                  Witnessed <strong>real Indian Air Force jets</strong> up close at the airbase — an unforgettable sight.
+                </li>
+                <li>
+                  <span class="exp-icon">&#128116;</span>
+                  Learned <strong>discipline, drill &amp; teamwork</strong> under experienced Air Force officers.
+                </li>
+                <li>
+                  <span class="exp-icon">&#127937;</span>
+                  Participated in <strong>morning parades &amp; physical training</strong> that built confidence and strength.
+                </li>
+                <li>
+                  <span class="exp-icon">&#129309;</span>
+                  Bonded with cadets from across Maharashtra — friendships that last a lifetime.
+                </li>
+                <li>
+                  <span class="exp-icon">&#127881;</span>
+                  The camp taught me that <strong>values like discipline and respect</strong> are the real wings of success.
+                </li>
+              </ul>
+
+              <!-- Quote -->
+              <div class="ncc-quote-box">
+                <p>&#8220; The sky is not the limit — for an NCC cadet, it is just the beginning. &#8221;</p>
+              </div>
+            </div>
+
+          </div><!-- end ncc-body -->
+
+        </div>
+      </section>
+
+      <!-- SLIDE 5 – Freedom, Honesty, Knowledge, Trust -->
+      <section class="slide" data-slide="4">
+        <div class="slide-content">
+
+          <p class="slide-label lbl-red animate-fade">&#10067; Why did you choose them?</p>
+          <h2 class="q-question" style="margin-bottom:.6rem;">Freedom &nbsp;·&nbsp; Honesty &nbsp;·&nbsp; Knowledge &nbsp;·&nbsp; Trust</h2>
+          <div class="deco-line" style="margin:.5rem 0 1rem;"></div>
+
+          <div class="vals-grid">
+
+            <!-- FREEDOM -->
+            <div class="val-block">
+              <div class="val-block-header vb-pink">
+                <span class="vb-emoji">&#129335;</span>
+                <h3>FREEDOM</h3>
+              </div>
+              <ul class="vb-list">
+                <li>True freedom means living <strong>without fear</strong> and being yourself.</li>
+                <li>Freedom gives us the right to <strong>think, speak &amp; grow</strong>.</li>
+                <li>Inner freedom starts when you are <strong>honest with yourself</strong>.</li>
+                <li>Without freedom, no value can be truly practiced.</li>
+              </ul>
+            </div>
+
+            <!-- HONESTY -->
+            <div class="val-block">
+              <div class="val-block-header vb-green">
+                <span class="vb-emoji">&#128079;</span>
+                <h3>HONESTY</h3>
+              </div>
+              <ul class="vb-list">
+                <li>Honesty <strong>builds trust</strong> in every relationship.</li>
+                <li>An honest person <strong>never fears</strong> anyone.</li>
+                <li>It brings <strong>peace of mind</strong> and a clear conscience.</li>
+                <li>One honest word is stronger than a hundred lies.</li>
+              </ul>
+            </div>
+
+            <!-- KNOWLEDGE -->
+            <div class="val-block">
+              <div class="val-block-header vb-yellow">
+                <span class="vb-emoji">&#128218;</span>
+                <h3>KNOWLEDGE</h3>
+              </div>
+              <ul class="vb-list">
+                <li>Knowledge <strong>removes darkness</strong> from life.</li>
+                <li>True knowledge leads to <strong>wisdom</strong>, not just information.</li>
+                <li>It empowers us to <strong>understand ourselves</strong> and the world.</li>
+                <li>Without knowledge, values cannot be understood deeply.</li>
+              </ul>
+            </div>
+
+            <!-- TRUST -->
+            <div class="val-block">
+              <div class="val-block-header vb-purple">
+                <span class="vb-emoji">&#129309;</span>
+                <h3>TRUST</h3>
+              </div>
+              <ul class="vb-list">
+                <li>Trust is the <strong>base of every strong</strong> relationship.</li>
+                <li>Once broken, trust is very <strong>hard to rebuild</strong>.</li>
+                <li>It creates a <strong>safe &amp; peaceful</strong> environment.</li>
+                <li>Without trust, no value has real meaning.</li>
+              </ul>
+            </div>
+
+          </div><!-- end vals-grid -->
+
+        </div>
+      </section>
+
+      <!-- SLIDE 6 – Q3: Which Values did you leave out? -->
+      <section class="slide" data-slide="5">
+        <div class="slide-content center-align">
+
+          <p class="slide-label lbl-purple animate-fade">&#10067; Quiz Time</p>
+
+          <h2 class="q-question">Q3) Which Values did you leave out?</h2>
+
+          <div class="deco-line"></div>
+
+          <p class="ans-label lbl-green" style="margin-top:1rem;">&#9989; Answer</p>
+
+          <!-- <div class="q2-chips">
+            <div class="q2-chip qc-orange">
+              <span class="q2-icon">&#10084;&#65039;</span>
+              <span class="q2-name">Respect</span>
+            </div>
+            <div class="q2-chip qc-teal">
+              <span class="q2-icon">&#9876;&#65039;</span>
+              <span class="q2-name">Justice</span>
+            </div>
+            <div class="q2-chip qc-indigo">
+              <span class="q2-icon">&#9749;</span>
+              <span class="q2-name">Peace</span>
+            </div>
+            <div class="q2-chip qc-brown">
+              <span class="q2-icon">&#127807;</span>
+              <span class="q2-name">Harmony</span>
+            </div>
+            <div class="q2-chip qc-navy">
+              <span class="q2-icon">&#128161;</span>
+              <span class="q2-name">Wisdom</span>
+            </div>
+          </div> -->
+
+          <div class="left-out-note">
+            <p>&#128336; These values are equally important — they complete the circle of a meaningful life.</p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SLIDE 7 – Q4: Can the Values you rejected become important later? -->
+      <section class="slide" data-slide="6">
+        <div class="slide-content center-align">
+
+          <p class="slide-label lbl-purple animate-fade">&#10067; Quiz Time</p>
+
+          <h2 class="q-question">Q4) Can the Values you rejected become important later?</h2>
+
+          <div class="deco-line"></div>
+
+          <!-- <div class="left-out-note" style="max-width: 650px; margin-top: 2rem;">
+            <p style="font-size: 1.05rem; font-style: normal; color: var(--text-main); font-weight: 500; text-align: left; line-height: 1.6;">
+              <strong>Yes, absolutely!</strong> As we grow, our life situations, responsibilities, and challenges change. A value that seems less urgent today (like Harmony or Wisdom) can become the most crucial one tomorrow to guide us through complex relationships and decisions.
+            </p>
+          </div> -->
+
+        </div>
+      </section>
+
+      <!-- SLIDE 8 – Thank You Video -->
+      <section class="slide" data-slide="7">
+        <div class="slide-content center-align">
+          <p class="slide-label lbl-blue animate-fade">&#127881; Conclusion</p>
+          <h2 class="q-question">Thank You</h2>
+          <div class="deco-line"></div>
+
+          <div class="video-container" id="thankVideoContainer">
+            <video id="thankVideo" src="assets/thank.mp4" preload="auto"></video>
+            <button class="custom-play-btn" id="videoPlayBtn" aria-label="Play video">
+              <span class="play-icon">&#9658;</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SLIDE 9 – Logout Slide -->
+      <section class="slide" data-slide="8">
+        <div class="slide-content center-align">
+          <div class="logout-slide-wrap">
+            <span class="logout-icon">&#128274;</span>
+            <h2 class="q-question" style="margin-top: 1rem;">You're All Caught Up!</h2>
+            <div class="deco-line"></div>
+            <p class="slide-desc" style="margin-bottom: 2rem;">You have successfully finished the presentation on Universal Human Values.</p>
+            <button class="btn-login" id="slideLogoutBtn" style="max-width: 250px; margin: 0 auto; background: var(--g-red);">
+              <span class="btn-text">Logout from Portal</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <!-- Slide Counter -->
+    <div class="slide-counter" id="slideCounter">1 / 9</div>
+
+    <!-- Progress Dots -->
+    <div class="dots-wrap" id="dotsWrap"></div>
+
+    <!-- Navigation Arrows — bottom-right -->
+    <div class="nav-arrows">
+      <button class="arrow-btn" id="prevBtn" aria-label="Previous slide">&#8592;</button>
+      <button class="arrow-btn" id="nextBtn" aria-label="Next slide">&#8594;</button>
+    </div>
+
+  </div>
+
+  <script src="assets/JS/app.js"></script>
+</body>
+</html>
