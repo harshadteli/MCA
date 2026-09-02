@@ -1,0 +1,32 @@
+# Python Bytecode and cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+bin/
+lib/
+include/
+pip-selfcheck.json
+
+# Local Databases/Data logs (Generated at runtime)
+analytics.json
+
+# OS files
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# IDEs/Editors configuration
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
