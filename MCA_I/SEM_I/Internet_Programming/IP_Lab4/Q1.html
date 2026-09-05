@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Map Example</title>
+</head>
+<body>
+    <h2>Click on India or USA on the Map</h2>
+
+    <img src="https://www.shutterstock.com/image-vector/usa-india-on-world-map-260nw-2428470365.jpg" 
+         alt="World Map" 
+         usemap="#worldmap" 
+         width="800" height="400">
+
+    
+    <map name="worldmap">
+       
+        <area shape="rect" 
+              coords="530,165,580,230" 
+              href="https://www.india.gov.in" 
+              alt="India" 
+              title="Click to go to India.gov.in"
+              target="_blank">
+
+     
+        <area shape="rect" 
+              coords="100,90,230,190" 
+              href="https://www.usa.gov" 
+              alt="USA" 
+              title="Click to go to USA.gov"
+              target="_blank">
+    </map>
+</body>
+</html>

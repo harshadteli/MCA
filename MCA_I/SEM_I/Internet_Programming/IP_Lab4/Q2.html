@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Interactive Vehicle Image</title>
+</head>
+<body>
+    <h2>My Garage - Click on Car or Motorcycle</h2>
+
+    <img src="garage.jpeg" 
+         alt="Car and Motorcycle in Garage" 
+         usemap="#vehiclemap" 
+         width="800" height="500">
+
+    <map name="vehiclemap">
+       
+        <area shape="rect" 
+              coords="98,315,450,770" 
+              href="data:text/html;charset=utf-8,<body style='font-family:Arial; padding:20px; background:%23ffe9e9'><h1>🚗 Car</h1><h3>Basic Features:</h3><ul><li>4 Wheels, 5 Seater Sedan</li><li>Engine: 1200cc Petrol</li><li>Features: AC, Airbags, Touchscreen</li><li>Top Speed: 180 km/h, Mileage 20 kmpl</li></ul><h3>Uses:</h3><ul><li>Family travel and long trips</li><li>Comfortable and safe in all weather</li><li>Luggage carrying capacity</li></ul></body>" 
+              alt="Car" 
+              title="Click for Car Info"
+              target="_blank">
+
+       
+        <area shape="rect" 
+              coords="450,365,705,795" 
+              href="data:text/html;charset=utf-8,<body style='font-family:Arial; padding:20px; background:%23e6f0ff'><h1>🏍️ Motorcycle</h1><h3>Basic Features:</h3><ul><li>2 Wheels, 2 Seater Sports Bike</li><li>Engine: 150cc-300cc Petrol</li><li>Features: Disc Brakes, LED Headlights</li><li>Top Speed: 140 km/h, Mileage 45 kmpl</li></ul><h3>Uses:</h3><ul><li>Fast commuting in city traffic</li><li>Low fuel cost and easy parking</li><li>Thrill and adventure riding</li></ul></body>" 
+              alt="Motorcycle" 
+              title="Click for Motorcycle Info"
+              target="_blank">
+    </map>
+</body>
+</html>
