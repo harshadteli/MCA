@@ -19,3 +19,8 @@ Create a structure called "Student" with members name, age, and total marks.
  - Write a program in C to compute the sum of all elements in an array using pointers.
  - Create a structure called "Student" with members name, age, and total marks. Write a C program to input data for two students, display their information, and find the average of total marks. Use a Structure pointer.
 
+## Assignment3: Linked list implementation of stack : Date : 11/09/2026
+- Linked list implementation of stack
+- Write C program to accept any expression from user and display it is valid or not
+
+
