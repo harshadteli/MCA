@@ -4,4 +4,5 @@
 - Lab 2  ( Assignment No 2) Date : 10/08/2026 (Order and Unorder List)
 - Lab 3 (Assignment No 3) Date : 17/08/2026 (Frames and Tables)
 - Lab 4 (Assignment No 4) Date : 03/09/2026 (ImageMap,Forms in HTML,Audio and Video Tags)
-- Lab Test1 on the Frame and Image Map, Date: 09/09/2026 
+- Lab Test1 on the Frame and Image Map, Date: 09/09/2026
+- Lab 5 (Assignment No 5) Date: 08/09/2026 (Design HTML Pages with the CSS)
