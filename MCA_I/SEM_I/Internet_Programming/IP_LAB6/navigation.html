@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation Bar</title>
+    <style>
+        *{
+            margin:0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+        body{
+            background-image: url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTH15zOC4OrHog7onBuiWsU9KW3uo4zuQGj2l0q7O0CNJJ4oTYf_iJTOQNH&s=10');
+            object-fit: cover;
+        }
+        .navbar
+        {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            padding: 15px 30px;
+            background-color: bisque;
+
+        }
+        .menu{
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            list-style: none;
+        }
+         img{
+            height: 10%;
+            width: 10%;
+            border-radius: 20%;
+        }
+        .menu a{
+            color: black;
+            background-color: lightgoldenrodyellow;
+            padding: 8px 8px;
+            border: 2px red solid;
+            /* border-radius: 20%; */
+            text-decoration: none;
+            font-size: 17px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Abe6p_exPqev1l0PQvknAflHn5orjf1oHoV5VGvuzA&s=10"
+         alt="College Logo">
+       <ul class="menu">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Services</a></li>
+        <li><a href="#">Contact US</a></li>
+        <li><a href="#">Login</a></li>
+       </ul>
+    </div>
+</body>
+</html>
