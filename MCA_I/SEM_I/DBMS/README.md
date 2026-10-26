@@ -5,3 +5,4 @@
 - Lab 3(Assignment No 3) Date : 2/09/2026 SQl Operators.
 - Lab 4(Assignment No 4) Date : 09/09/2026 SQL Agregate Functions and Clause
 - Lab 5(Assignment No 5) Date : 31/09/2026 SQL Agregate Functions and Clause
+- Lab 8(Assignment No 8) Date: 21/10/2026 SQL Commit and Transactions Operations
