@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Using Functions</title>
+</head>
+<body>
+    <script type="text/javascript">
+    function addition(a,b){
+        return a+b;
+    }
+    function subtraction(a,b){
+        return a-b;
+    }
+    function multiply(a,b){
+        return a*b;
+    }
+    function divide(a,b){
+        return a/b;
+    }
+    let a = Number(prompt("Enter First Number:"));
+    let b = Number(prompt("Enter Second Number:"));
+    let choice = prompt("Enter Choice:+,-,*,/");
+    if(choice=='+'){
+        alert(addition(a,b));
+    }else if(choice=='-'){
+        alert(substraction(a,b));
+    }else if(choice=='*'){
+        alert(multiply(a,b));
+    }else if(choice=='/'){
+        alert(divide(a,b))
+    }
+    else{
+        alert("Invalid Choice")
+    }
+    </script>
+</body>
+</html>

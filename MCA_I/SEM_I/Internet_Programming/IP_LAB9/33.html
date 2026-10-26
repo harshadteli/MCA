@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Information Form</title>
+</head>
+<body>
+    <div id="result"></div>
+        <script type="text/javascript">
+            let  name= prompt("Enter Your Name:");
+            let age=prompt("Enter Age:");
+            let course=prompt("Enter Course:");
+            let college=prompt("Enter College:");
+
+            if(age<18){
+                alert('Not Eligible');
+            }
+            else{
+                document.getElementById("result").innerHTML=`
+                 <table border='1' cellspacing='10'>
+            <tr>
+                <th>Field</th>
+                <th>Details</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>${name}</td>
+            </tr>
+            <tr>
+                <td>Age</td>
+                <td>${age}</td>
+            </tr>
+            <tr>
+                <td>Course</td>
+                <td>${course}</td>
+            </tr>
+            <tr>
+                <td>College</td>
+                <td>${college}</td>
+            </tr>
+        </table>`;
+                
+            }
+        </script>
+    
+</body>
+</html>

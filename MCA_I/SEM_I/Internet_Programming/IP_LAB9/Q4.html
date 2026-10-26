@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Aunthentication</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script type="text/javascript">
+        let username,password,again;
+        do{
+            username=prompt("Enter Username:");
+            password=prompt("Enter Password:");
+            if(username==='admin' && password==='admin1234'){
+                document.getElementById("result").innerHTML=`
+                <center>
+                    <h1>Login Successful</h1>
+                </center>`;
+            }
+            else{
+                alert("Invalid Login");
+                again=confirm("Do you want to try again?");
+            }
+        }while(again);
+    </script>
+
+</body>
+</html>

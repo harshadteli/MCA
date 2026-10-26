@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Processing</title>
+    <style>
+        body {
+            background-color: black;
+            color: whitesmoke;
+        }
+    </style>
+</head>
+
+<body>
+
+    <script type="text/javascript">
+        let p = 0; n = 0, z = 0;
+        let arr = [10, -5, 20, 0, -8, 15, 0];
+        function even() {
+            let result = [];
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] % 2 == 0) {
+                    result.push(arr[i]);
+                }
+            }
+            return result;
+        }
+        function sum() {
+            let s = 0;
+            for (let i = 0; i < arr.length; i++) {
+                s = s + arr[i];
+            }
+            return s;
+        }
+        function max() {
+            let max = arr[0];
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > max) {
+                    max = arr[i];
+                }
+            }
+            return max;
+        }
+        function count() {
+
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] > 0) {
+                    p++;
+                }
+                else if (arr[i] < 0) {
+                    n++;
+                }
+                else {
+                    z++;
+                }
+            }
+
+        }
+        count();
+        document.write("Even Numbers: " + even() + "<br>");
+        document.write("Sum of the Array is : " + sum() + "<br>");
+        document.write("Maximum of the Array is : " + max() + "<br>");
+        document.write("Total Positive Numbers of the Array is : " + p + "<br>");
+        document.write("Total Negative Numbers of the Array is : " + n + "<br>");
+        document.write("Total Zero's in the Array is : " + z + "<br>");
+    </script>
+</body>
+
+</html>

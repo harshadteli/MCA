@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Color Chooser</title>
+</head>
+<body>
+    <div id="result"></div>
+    <script type="text/javascript">
+        let color=prompt('Enter Color:'+'\n(Red,Blue,Yellow,Green)');
+        if(color=="red"||color=="blue"||color=="yellow"||color=="green"){
+            document.body.style.backgroundColor=color;
+            document.getElementById("result").innerText="Background Color is Changed To "+color;
+
+        }else{
+            alert("Color not available");
+
+        }
+
+    </script>
+    
+</body>
+</html>
