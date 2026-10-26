@@ -7,3 +7,4 @@
 - Lab Test1 on the Frame and Image Map, Date: 09/09/2026
 - Lab 5 (Assignment No 5) Date: 08/09/2026 (Design HTML Pages with the CSS)
 - Lab 6 (Assignment No 6) Date: 01/10/2026 (Based on the CSS Flex,Card and Media )
+- Lab 9 (Assignment No 9) Date: 22/10/2026 (Based on the JavaScript)
