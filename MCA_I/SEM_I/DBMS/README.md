@@ -6,3 +6,4 @@
 - Lab 4(Assignment No 4) Date : 09/09/2026 SQL Agregate Functions and Clause
 - Lab 5(Assignment No 5) Date : 31/09/2026 SQL Agregate Functions and Clause
 - Lab 8(Assignment No 8) Date: 21/10/2026 SQL Commit and Transactions Operations
+- Lab 9(Assignment No 9) Date: 28/10/2026 Views and indexes in the DBMS
