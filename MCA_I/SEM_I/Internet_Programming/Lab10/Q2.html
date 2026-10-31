@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+
+    <h2>Registration Form</h2>
+
+    <form onsubmit="return validateForm(event)">
+
+        Name:
+        <input type="text" id="name">
+        <span id="nameError"></span>
+        <br><br>
+
+        Email:
+        <input type="text" id="email">
+        <span id="emailError"></span>
+        <br><br>
+
+        Phone:
+        <input type="text" id="phone">
+        <span id="phoneError"></span>
+        <br><br>
+
+        Password:
+        <input type="password" id="password">
+        <span id="passError"></span>
+        <br><br>
+
+        Confirm Password:
+        <input type="password" id="confirm">
+        <span id="confirmError"></span>
+        <br><br>
+
+        <button type="submit">Register</button>
+
+    </form>
+
+    <script>
+
+        function validateForm(event) {
+
+            event.preventDefault();
+
+            let name = document.getElementById("name").value;
+            let email = document.getElementById("email").value;
+            let phone = document.getElementById("phone").value;
+            let password = document.getElementById("password").value;
+            let confirm = document.getElementById("confirm").value;
+
+            document.getElementById("nameError").innerHTML = "";
+            document.getElementById("emailError").innerHTML = "";
+            document.getElementById("phoneError").innerHTML = "";
+            document.getElementById("passError").innerHTML = "";
+            document.getElementById("confirmError").innerHTML = "";
+
+            let valid = true;
+
+            let emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+            let phonePattern = /^[0-9]{10}$/;
+
+            if(name == "") {
+                document.getElementById("nameError").innerHTML = "Enter name";
+                valid = false;
+            }
+
+            if(!emailPattern.test(email)) {
+                document.getElementById("emailError").innerHTML = "Invalid Email";
+                valid = false;
+            }
+
+            if(!phonePattern.test(phone)) {
+                document.getElementById("phoneError").innerHTML = "Enter 10 digit phone number";
+                valid = false;
+            }
+
+            if(password == "") {
+                document.getElementById("passError").innerHTML = "Enter password";
+                valid = false;
+            }
+
+            if(password != confirm) {
+                document.getElementById("confirmError").innerHTML = "Password does not match";
+                valid = false;
+            }
+
+            if(valid) {
+                alert("Registration Successful!");
+            }
+
+            return false;
+        }
+
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Character Counter</title>
+</head>
+<body>
+
+    <h2>Character Counter</h2>
+
+    <textarea id="text" rows="5" cols="40"
+    placeholder="Enter your text"></textarea>
+
+    <p>Character Count: <span id="count">0</span>/20</p>
+
+    <button id="submit">Submit</button>
+
+    <script>
+
+        let textarea = document.getElementById("text");
+        let count = document.getElementById("count");
+        let button = document.getElementById("submit");
+
+        textarea.addEventListener("keyup", function() {
+
+            let total = textarea.value.length;
+
+            count.innerHTML = total;
+
+            if(total > 20) {
+                textarea.style.border = "2px solid red";
+                button.disabled = true;
+            }
+            else {
+                textarea.style.border = "2px solid black";
+                button.disabled = false;
+            }
+
+        });
+
+        button.onclick = function() {
+            alert("Submitted Successfully!");
+        };
+
+    </script>
+
+</body>
+</html>

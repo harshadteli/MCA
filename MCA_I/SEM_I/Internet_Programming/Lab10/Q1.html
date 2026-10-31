@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>To Do List</title>
+</head>
+<body>
+
+    <h2>My To Do List</h2>
+
+    <input type="text" id="task" placeholder="Enter your task">
+    <button onclick="addTask()">Add Task</button>
+
+    <ul id="list"></ul>
+
+    <script>
+
+        let input = document.getElementById("task");
+
+        input.addEventListener("keypress", function(event) {
+            if(event.key == "Enter") {
+                addTask();
+            }
+        });
+
+        function addTask() {
+            let task = input.value;
+
+            if(task == "") {
+                alert("Please enter a task");
+            }
+            else {
+                let li = document.createElement("li");
+
+                li.innerHTML = task + 
+                " <button onclick='this.parentElement.remove()'>Delete</button>";
+
+                document.getElementById("list").appendChild(li);
+
+                input.value = "";
+            }
+        }
+
+    </script>
+
+</body>
+</html>
