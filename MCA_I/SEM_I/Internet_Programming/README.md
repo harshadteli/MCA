@@ -9,3 +9,4 @@
 - Lab 6 (Assignment No 6) Date: 01/10/2026 (Based on the CSS Flex,Card and Media )
 - Lab 9 (Assignment No 9) Date: 22/10/2026 (Based on the JavaScript)
 - Lab 10 Assignment No 10) Date: 29/10/2026 (Based on the Key Events).
+- Lecture Lab Date:03/11/2026 (Class and Objects,This Keywords)
