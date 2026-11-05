@@ -8,5 +8,6 @@
 - Lab 5 (Assignment No 5) Date: 08/09/2026 (Design HTML Pages with the CSS)
 - Lab 6 (Assignment No 6) Date: 01/10/2026 (Based on the CSS Flex,Card and Media )
 - Lab 9 (Assignment No 9) Date: 22/10/2026 (Based on the JavaScript)
-- Lab 10 Assignment No 10) Date: 29/10/2026 (Based on the Key Events).
+- Lab 10 (Assignment No 10) Date: 29/10/2026 (Based on the Key Events).
 - Lecture Lab Date:03/11/2026 (Class and Objects,This Keywords)
+- Lab 11 (Assignment No 11) Date:5/11/2026 (Based on the Class,object,jquery)
