@@ -1,0 +1,70 @@
+<html>
+<head>
+    <title>Login System</title>
+</head>
+<body>
+
+<h2>Login System</h2>
+
+Username:
+<input type="text" id="username"><br><br>
+
+Password:
+<input type="password" id="password"><br><br>
+
+<button onclick="login()">Login</button>
+
+<p id="result"></p>
+
+<script>
+
+class LoginSystem
+{
+    constructor()
+    {
+        this.username = "admin";
+        this.password = "12345";
+        this.attempts = 3;
+    }
+
+    checkLogin(u, p)
+    {
+        if(this.attempts == 0)
+        {
+            return "Account Locked!";
+        }
+
+        if(u == this.username && p == this.password)
+        {
+            return "Login Successful!";
+        }
+        else
+        {
+            this.attempts--;
+
+            if(this.attempts == 0)
+            {
+                return "Account Locked!";
+            }
+
+            return "Wrong Username or Password! Remaining Attempts: " + this.attempts;
+        }
+    }
+}
+
+let obj = new LoginSystem();
+
+function login()
+{
+    let u = document.getElementById("username").value;
+    let p = document.getElementById("password").value;
+
+    let msg = obj.checkLogin(u, p);
+
+    document.getElementById("result").innerHTML = msg;
+}
+
+</script>
+
+</body>
+</html>

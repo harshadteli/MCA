@@ -1,0 +1,47 @@
+<html>
+<head>
+    <title>Password Checker</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+
+<h2>Password Strength Checker</h2>
+
+Enter Password:
+<input type="password" id="pass">
+
+<p id="result"></p>
+
+<script>
+$(document).ready(function()
+{
+    $("#pass").keyup(function()
+    {
+        var p = $("#pass").val();
+
+        if(p.length < 6)
+        {
+            $("#result").text("Weak Password");
+        }
+        else if(p.length >= 8 &&
+                /[A-Z]/.test(p) &&
+                /[a-z]/.test(p) &&
+                /[0-9]/.test(p) &&
+                /[^A-Za-z0-9]/.test(p))
+        {
+            $("#result").text("Strong Password");
+        }
+        else if(/[a-zA-Z]/.test(p) && /[0-9]/.test(p))
+        {
+            $("#result").text("Medium Password");
+        }
+        else
+        {
+            $("#result").text("Weak Password");
+        }
+    });
+});
+</script>
+
+</body>
+</html>

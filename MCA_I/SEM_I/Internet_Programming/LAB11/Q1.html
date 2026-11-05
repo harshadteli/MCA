@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electricity Bill</title>
+</head>
+<body>
+
+<script>
+    class ElectricityBill {
+
+        constructor(consumerName, unit) {
+            this.consumerName = consumerName;
+            this.unit = unit;
+            this.total = 0;
+        }
+
+        calculateAmount() {
+
+            if (this.unit <= 100) {
+                this.total = this.unit * 1.5;
+            }
+            else if (this.unit <= 300) {
+                this.total = this.unit * 2.5;
+            }
+            else {
+                this.total = this.unit * 4;
+            }
+
+        }
+
+        displayBill() {
+            console.log("Consumer Name: " + this.consumerName);
+            console.log("Units Consumed: " + this.unit);
+            console.log("Total Amount: Rs. " + this.total);
+        }
+    }
+
+    let user = new ElectricityBill("Harshad Teli", 45000);
+
+    user.calculateAmount();
+    user.displayBill();
+
+</script>
+
+</body>
+</html>

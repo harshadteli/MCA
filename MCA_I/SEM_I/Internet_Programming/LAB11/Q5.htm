@@ -1,0 +1,74 @@
+<html>
+<head>
+    <title>Billing System</title>
+</head>
+<body>
+
+<h2>Real-World Billing System</h2>
+
+<script>
+
+class Customer
+{
+    constructor(name, type)
+    {
+        this.name = name;
+        this.type = type;
+    }
+}
+
+class Bill extends Customer
+{
+    constructor(name, type, amount)
+    {
+        super(name, type);
+        this.amount = amount;
+    }
+
+    calculateBill()
+    {
+        return this.amount;
+    }
+}
+
+class DiscountedBill extends Bill
+{
+    calculateDiscount()
+    {
+        if(this.type == "Regular")
+        {
+            this.discount = 5;
+        }
+        else if(this.type == "Premium")
+        {
+            this.discount = 10;
+        }
+        else
+        {
+            this.discount = 0;
+        }
+
+        this.finalAmount = this.amount - (this.amount * this.discount / 100);
+    }
+
+    displayBill()
+    {
+        document.write("Customer Name: " + this.name + "<br>");
+        document.write("Customer Type: " + this.type + "<br>");
+        document.write("Bill Amount: Rs. " + this.amount + "<br>");
+        document.write("Discount: " + this.discount + "%<br>");
+        document.write("Final Payable Amount: Rs. " + this.finalAmount);
+    }
+}
+
+// Create Object
+let obj = new DiscountedBill("Harshad", "Premium", 1000);
+
+obj.calculateBill();
+obj.calculateDiscount();
+obj.displayBill();
+
+</script>
+
+</body>
+</html>
